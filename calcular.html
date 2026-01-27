@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="altura" placeholder="altura">
+    <input type="text" id="peso" placeholder="peso">
+    <button onclick="calcular()">Calcular</button>
+    <p id="imc"></p>
+    <p id="classificacao"></p>
+</body>
+<script>
+    const resultadoimc = document.getElementById("imc")
+    const resultadoclassificacao = document.getElementById("classificacao")
+
+    function calcular(){
+        var altura = Number(document.getElementById("altura").value)
+        var peso = Number(document.getElementById("peso").value)
+
+        const resultado = peso / (altura*altura)
+
+        resultadoimc.textContent = `${resultado.toFixed(2)}`
+        
+        if (resultado < 18.5) {
+            resultadoclassificacao.textContent = "Abaixo do peso"
+        }
+        else if (resultado >24.9){
+            resultadoclassificacao.textContent = "Acima do peso"
+        }
+        else{
+            resultadoclassificacao.textContent = "Peso normal"
+        }
+    }
+</script>
+</html>
