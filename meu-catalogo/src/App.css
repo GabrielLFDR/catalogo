@@ -1,0 +1,54 @@
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 3, 44, 0.8);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.paginas {
+  background-color: var(--bg-container);
+  height: 100%;
+  width: 80vw;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  flex: 1;          
+  min-height: 0;   
+  overflow-y: auto; 
+
+}
+
+header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--borda-sutil);
+}
+
+.Title_prymary {
+  font-size: 1.5rem;
+  color: var(--texto-principal);
+  display: inline;
+}
+
+nav {
+  display: inline-block;
+}
+
+.home_nav_options {
+  margin-left: 15rem;
+  display: flex;
+  gap: 20rem;
+}
+.active {
+  color: var(--azul-destaque);
+  cursor: pointer;
+}
+.inactive {
+  color: var(--texto-secundario);
+  cursor: not-allowed;
+}

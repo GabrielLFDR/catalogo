@@ -1,0 +1,76 @@
+.novo-produto-form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #cccccc42;
+    border-radius: 8px;
+    background-color: #00054d13;
+
+    h2 {
+        font-size: 1.5rem;
+        color: #f7f7f7;
+    }
+
+    input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .exemplo-produto {
+        display: flex;
+        flex-direction: row;
+        background-color: #f5f5f50c;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        img {
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .exemplo-produto-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 0.5rem;
+            margin-left: 1rem;
+     
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #007bff;
+                margin-top: auto;
+                align-self: flex-end;
+                padding: 1rem;
+            }
+        }
+    }
+
+}

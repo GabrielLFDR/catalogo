@@ -1,0 +1,133 @@
+/* 1. Box-sizing global e reset de espaçamentos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Prevenção de redimensionamento de texto em modo paisagem no mobile */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 3. Reset de line-height e renderização de fonte */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Remoção de hierarquia visual padrão de títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* 5. Limpeza de listas */
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+/* 6. Limpeza de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Comportamento responsivo e de bloco para mídias */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. Reset agressivo para formulários e botões */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Restaura o cursor de clique apenas para botões */
+button {
+  cursor: pointer;
+}
+
+/* Resolve o problema de resize em textareas */
+textarea {
+  resize: vertical;
+}
+
+/* 9. Reset de tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 10. Limpeza de citações */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* 11. Limpeza da linha horizontal (hr) */
+hr {
+  border: none;
+  height: 1px;
+  background-color: currentColor;
+}
+
+/* css base */
+:root {
+  /* 1. Tons de Fundo (do mais escuro ao mais claro para criar profundidade) */
+  --bg-pagina: #020614;      /* O azul bem escuro que você já usa no body */
+  --bg-container: #0a1128;   /* Um tom acima para destacar os blocos/cards */
+  --bg-input: #131c38;       /* Mais claro um pouco para você enxergar onde digitar */
+  /* 2. Tons de Texto (para não deixar tudo branco igual) */
+  --texto-principal: #f7f7f7;  /* Para títulos (h1, h2, h3) e o que você digita */
+  --texto-secundario: #94a3b8; /* Cinza-azulado para descrições (p) não brigarem com o título */
+  /* 3. Tons de Azul (separando botão de texto) */
+  --azul-botao: #2563eb;       /* Azul forte para fundo de botão */
+  --azul-destaque: #60a5fa;    /* Azul mais claro/luminoso para preços (R$) e links no escuro */
+  /* 4. Borda sutil (substitui aquele #ccc forte) */
+  --borda-sutil: #263354;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-pagina);
+  color: var(--texto-principal) ;
+}
+
